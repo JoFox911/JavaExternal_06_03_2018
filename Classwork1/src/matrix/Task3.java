@@ -28,15 +28,29 @@ public class Task3 {
 		}
 		
 		int l=0,r=n-1;
-		for(int counter = 0, i = 0, j = 0;counter<(matrix.length-1)*(matrix.length-1);counter++ ){
+		System.out.println("Result:");
+		for(int counter = 0, i = 0, j = 0;counter<(matrix.length)*(matrix.length);counter++ ){
 			System.out.print(matrix[i][j] + " ");
-			if ((i==(l+1))&&(j==l)) {
-				r--;l++;
-			} //условие перехода на    внутреннюю спираль
-			if ((j==r)&&(i<r)) {i++;continue;} //Движение по спирали вниз
-			if ((j<r)&&(i==l)) {j++;continue;} //Вправо
-			if ((i==r)&&(j>l)) {j--;continue;} //Влевo
-			if ((j==l)&&(i>l)) {i--;continue;} //Вверх
+			if ((i == (l + 1)) && (j == l)) {
+				r--;
+				l++;
+			}
+			if ((j == r) && (i < r)) {
+				i++;
+				continue;
+			}
+			if ((j < r) && (i == l)) {
+				j++;
+				continue;
+			}
+			if ((i == r) && (j > l)) {
+				j--;
+				continue;
+			}
+			if ((j == l) && (i > l)) {
+				i--;
+				continue;
+			}
 
 		}
 

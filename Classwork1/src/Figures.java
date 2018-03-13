@@ -60,6 +60,8 @@ public class Figures {
 	}
 	
 	public static void main(String[] args) {
+		rectangle(4,5);
+		rectTriangle(6,6);
 		triangle(3, 6);
 		romb(6, 6);
 	}
