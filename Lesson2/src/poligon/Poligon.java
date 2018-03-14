@@ -1,3 +1,6 @@
+/*
+ * создать класс Polygon для описания фигур разной размерности
+ */
 package poligon;
 
 import java.util.ArrayList;
